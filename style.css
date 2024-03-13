@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Serif+Khojki:wght@400..700&display=swap');
+
+body {
+    background-image: linear-gradient(to left bottom, #f5f9fa, #ebf6fa, #e2f3fb, #dbf0fd, #d4ecff);
+}
+/*=============Header==================*/
+nav{
+    background-image: linear-gradient(to left, #3796f1, #00b5ff, #00ceed, #00e0ab, #12eb4d);
+}
+header {
+    right: 0;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+  
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "DM Sans", sans-serif;
+
+}
+.navbar a:hover{
+    color: #fd76eb;
+
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    margin-right: 5rem;
+}
+
+main {
+    padding-top: 5.3rem;
+}
+
+
+/*=================== Carrusel======================*/
+
+.carousel-inner {
+    padding: 5px 0 30px 0;
+}
+
+.img-carrusel {
+    height: 550px;
+}
+
+.carousel-caption {
+    margin: 30px;
+}
+
+.carousel-caption h1 {
+    font-size: 2.8rem;
+    font-family: "Noto Serif Khojki", serif;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    font-family: "DM Sans", sans-serif;
+}
+
+.btn {
+    font-size: 1rem;
+    font-family: "DM Sans", sans-serif;
+    color: #f7f7f7;
+}
+
+
+@media(max-width: 576px ) {
+    .carousel-caption h1 { 
+        font-size: 1.5rem;
+    }
+    .carousel-caption p{
+        font-size: 0.8rem;
+    }
+    .btn{
+        font-size: 0.5rem;
+    }
+ }
+ @media(max-width: 300px ) {
+    .carousel-caption h1 { 
+        font-size: 1rem;
+    }
+    .carousel-caption p{
+        font-size: 0.5rem;
+    }
+    .btn{
+        font-size: 0.3rem;
+    }
+ }
+/*========================== Quienes somos====================*/
+
+.Qsomos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    border-top: thick double #32a1ce;
+    border-bottom: thick double #32a1ce;
+    background-color: #fdfdfdc5;
+    border-radius: 50px;
+}
+
+.Qsomos h1 {
+    font-size: 2.3rem;
+    padding: 10px;
+    font-family: "Noto Serif Khojki", serif;
+    padding-bottom: 3rem;
+}
+
+.Qsomos p {
+    text-align: justify;
+    font-size: 15px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.pplogo {
+    width: 350px;
+    height: 350px;
+}
+@media(max-width: 290px ) {
+    .pplogo{ 
+         width: 250px;
+        height: 250px; 
+ }
+    }
+
+
+
+/* ========================Padecimientos ====================*/
+.padecimientos {
+    background-color: #fdfdfdc5;
+    margin: 50px 0 50px 0;
+    padding: 3rem;
+    border-radius: 20px;
+
+}
+
+.cajap {
+    background-color: #cef0f5bb;
+    border-radius: 20px;
+}
+
+.cajap:hover {
+    background-color: #ffbff6;
+
+}
+
+.cajap p {
+    font-size: 15px;
+    text-align: justify;
+    font-family: "DM Sans", sans-serif;
+}
+
+.padecimientos h1 {
+    font-size: 2.3rem;
+    font-family: "Noto Serif Khojki", serif;
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+.padecimientos h2 {
+    font-size: 25px;
+    font-family: "DM Sans", sans-serif;
+}
+
+
+.padecimientos img {
+    width: 120px;
+    height: 160px;
+    float: left;
+
+}
+@media(max-width: 360px ) {
+    .cajap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cajap p{ 
+        font-size: 0.8rem;
+        text-align:justify;
+ }
+    
+    .cajap h2{ 
+        font-size: 1.4rem;
+        text-align:center;
+ }
+}
+
+
+/*======================Preguntas frecuentes===================*/
+
+.FAQs {
+    background-color: #fdfdfdc5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+    border-radius: 20px;
+}
+
+.FAQs h1 {
+    font-family: "Noto Serif Khojki", serif;
+    font-size: 2.3rem;
+    padding-bottom: 3rem;
+}
+
+details {
+    background-color: #fdfdfde0;
+    width: 70%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #aca8ab;
+    color: #4e4b4b;
+    position: relative;
+
+}
+
+details summary {
+    font-size: 17px;
+    padding: 1rem;
+    cursor: pointer;
+    list-style: none;
+    font-family: "DM Sans", sans-serif;
+
+
+}
+
+details p {
+    padding: 10px;
+    margin: 0 10px 20px 10px;
+    background: #cef0f571;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: "DM Sans", sans-serif;
+
+}
+
+details:hover,
+details[open] {
+    box-shadow: 5px 5px 10px #ffbff6;
+}
+
+details[open] {
+    background: #ffffff;
+}
+
+details[open] summary {
+    font-weight: 600;
+}
+
+details summary::before {
+    position: absolute;
+    content: "+";
+    font-size: 20px;
+    top: 10px;
+    right: 16px;
+}
+
+/*========================= Footer=======================*/
+.footer {
+    width: 100%;
+    background-color: #6bddffd5;
+    margin: 35px 0px 10px 0px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.footer h2 {
+    font-family: "Noto Serif Khojki", serif;
+}
+
+.footer p, a {
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer h4 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+
